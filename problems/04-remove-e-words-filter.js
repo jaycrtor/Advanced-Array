@@ -7,19 +7,24 @@ Solve this using Array's `filter()` method.
 
 Examples:
 
-console.log(removeEWords('What time is it everyone?')); // 'What is it'
-console.log(removeEWords('Enter the building')); // 'building'
+
 
 */
 
 let removeEWords = function(sentence) {
-    // Your code here
-};
+  let array = sentence.split(' ')
+  let arr = array.filter(el =>{
+    if(!el.toLowerCase().includes('e')) return el
+  })
+  return arr.join(' ')
 
+};
+console.log(removeEWords('What time is it everyone?')); // 'What is it'
+console.log(removeEWords('Enter the building')); // 'building'
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
   module.exports = removeEWords;
 } catch (e) {
   module.exports = null;
-}
+}
