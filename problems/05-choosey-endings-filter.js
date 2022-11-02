@@ -14,13 +14,19 @@ Examples:
 */
 
 let chooseyEndings = function(words, suffix) {
+  if(typeof words === "number") return [];
+  let arr = [];
   // if(typeof words !== 'string') return null
-  // if(typeof words !== [])
-  let word = words.filter(el =>{
-    if(el.endsWith(suffix)) return el
+
+
+   words.filter(el =>{
+
+    if(el.endsWith(suffix)) arr.push(el)
+    // if(typeof words !== []) delete word
     // if(typeof el !== 'string') return
+
   })
-  return word
+  return arr
 
 
 

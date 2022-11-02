@@ -7,19 +7,24 @@ Solve this using Array's `map()` method.
 
 Examples:
 
-console.log(yeller(['hello', 'world'])); // [ 'HELLO!', 'WORLD!' ]
-console.log(yeller(['kiwi', 'orange', 'mango'])); // [ 'KIWI!', 'ORANGE!', 'MANGO!' ]
+
 
 */
 
 let yeller = function(words) {
-  // Your code here
-};
+ let al = words.map(el =>{
+    return (el.toUpperCase() + "!")
+  })
+  return al
 
+
+};
+console.log(yeller(['hello', 'world'])); // [ 'HELLO!', 'WORLD!' ]
+console.log(yeller(['kiwi', 'orange', 'mango'])); // [ 'KIWI!', 'ORANGE!', 'MANGO!' ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
   module.exports = yeller;
 } catch (e) {
   module.exports = null;
-}
+}

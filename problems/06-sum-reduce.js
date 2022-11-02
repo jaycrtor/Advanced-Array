@@ -7,14 +7,20 @@ Solve this using Array's `reduce()` method.
 
 Examples:
 
-console.log(sumWithReduce([10, 3, 5, 2])); // 20
-console.log(sumWithReduce([])); // 0
+
 
 */
 
 let sumWithReduce = function(nums) {
-  // Your code here
+  if(!nums.length) return 0;
+ let sum = nums.reduce((num , el) =>{
+  return num + el
+ })
+ return sum
+
 };
+console.log(sumWithReduce([10, 3, 5, 2])); // 20
+console.log(sumWithReduce([])); // 0
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -8,18 +8,38 @@ methods.
 
 Examples:
 
+
+
+*/
+
+let hasThreeVowels = function(string) {
+    let vowels ='aeiou'
+
+    let array = []
+    let word = string.split('')
+     word.forEach(el =>{
+        if(vowels.includes(el) && array.indexOf(el) === -1){
+            array.push(el)
+
+        }
+    })
+    if(array.length >= 3) return true;
+    return false
+
+
+
+
+
+
+
+
+
+};
 console.log(hasThreeVowels('delicious'));       //  true
 console.log(hasThreeVowels('bootcamp prep'));   //  true
 console.log(hasThreeVowels('bootcamp'));        //  false
 console.log(hasThreeVowels('dog'));             //  false
 console.log(hasThreeVowels('go home'));         //  false
-
-*/
-
-let hasThreeVowels = function(string) {
-    // Your code here
-};
-
 // Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -28,4 +48,4 @@ try {
     module.exports = hasThreeVowels;
 } catch (e) {
     module.exports = null;
-}
+}

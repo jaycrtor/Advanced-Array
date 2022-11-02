@@ -13,19 +13,24 @@ methods.
 
 Examples:
 
-console.log(choosePrimes([36, 48, 9, 13, 19])); // [ 13, 19 ]
-console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
+
 
 */
 
 let isPrime = function(num) {
-    // Your code here
+    for(let i = 0 ; i < num.length ; i++){
+        
+    }
+
+
 }
 
 let choosePrimes = function(nums) {
-    // Your code here
-}
 
+
+}
+console.log(choosePrimes([36, 48, 9, 13, 19])); // [ 13, 19 ]
+console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
 // alternative solution using Array.filter
 // let choosePrimes = function(nums) {
 //     return nums.filter(isPrime);
@@ -37,4 +42,4 @@ try {
     module.exports = choosePrimes;
 } catch (e) {
     module.exports = null;
-}
+}
