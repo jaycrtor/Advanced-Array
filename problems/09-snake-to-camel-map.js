@@ -13,10 +13,12 @@ Examples:
 */
 
 function snakeToCamel(str) {
-    word = str.split('')
-    if(!word === '_')
-    word.join('')
-    console.log('here',word)
+    word = str.split('_')
+    let result = word.map(el =>{
+         return el.slice(0,1).toUpperCase() + el.slice(1).toLowerCase()
+
+    })
+    return result.join('')
 
 
 }
