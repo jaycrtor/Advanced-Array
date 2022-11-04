@@ -18,19 +18,34 @@ Examples:
 */
 
 let isPrime = function(num) {
-    for(let i = 0 ; i < num.length ; i++){
-        
+    let isPrime = function(num) {
+        let arr = [];
+        for(let i = 2 ; i <= num ; i++){
+            if((num[i] % 2 !== 0) && (num[i] % 3 !== 0))
+            return (arr.push(i))
+        }
+
+        return arr
     }
+}
+
+
+    let choosePrimes = function(nums) {
+        return nums.filter(isPrime =>{
+            if((isPrime % 2 !== 0 && isPrime %3 !== 0)) return isPrime
+        });
+
+
+
+
+
 
 
 }
 
-let choosePrimes = function(nums) {
-
-
-}
 console.log(choosePrimes([36, 48, 9, 13, 19])); // [ 13, 19 ]
 console.log(choosePrimes([5, 6, 4, 11, 2017])); // [ 5, 11, 2017 ]
+
 // alternative solution using Array.filter
 // let choosePrimes = function(nums) {
 //     return nums.filter(isPrime);

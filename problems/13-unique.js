@@ -13,11 +13,9 @@ Examples:
 */
 
 let unique = function(array) {
-   let arr = array.filter(el =>{
-    return el
-   })
-   return arr
-
+    let result = array.filter(el =>{
+        
+    })
 
 
 
